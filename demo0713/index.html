@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>中国电信股份有限公司泰州分公司</title>
+  <link rel="icon" href="img/favicon.ico" type="images/x-ico" />
   <link rel="stylesheet" href="style/style.css">
 </head>
 
@@ -33,8 +34,10 @@
         </div>
       </div>
       <ul class="nav flex justify-between">
-        <li>
+        <li class="position-relative app">
           <a href="#">应用<span class="icon-font arrow-down">&#xe62e;</span></a>
+          <div class="hid-app">
+          </div>
         </li>
         <li><a href="#">企服商城</a></li>
         <li><a href="#"><img src="img/nav_icon.png" width="122" height="28" alt=""></a></li>
@@ -52,7 +55,7 @@
       <div class="cont-left flex flex-direction-column align-items-center">
         <img src="img/banner_icon1.jpg" width="200" height="225" alt="">
         <img src="img/video.png" width="68" height="70" alt="">
-        <a href="#" class="icon-font">&#xe734; 获取企业认证</a>
+        <a href="#" class="icon-font">&#xe625; 获取企业认证</a>
         <img src="img/banner_icon2.png" width="500" height="372" alt="">
       </div>
       <div class="cont-right">
@@ -287,41 +290,6 @@
         imgSrc: "img/item_icon3.png",
         title: "疑似实际控制人",
         desc: "算法分析企业实控人"
-      },
-      {
-        imgSrc: "img/item_icon1.png",
-        title: "财产线索",
-        desc: "线索数量 697"
-      },
-      {
-        imgSrc: "img/item_icon2.png",
-        title: "企业图谱",
-        desc: "发现企业架构"
-      },
-      {
-        imgSrc: "img/item_icon3.png",
-        title: "疑似实际控制人",
-        desc: "算法分析企业实控人"
-      },
-      {
-        imgSrc: "img/item_icon3.png",
-        title: "疑似实际控制人",
-        desc: "算法分析企业实控人"
-      },
-      {
-        imgSrc: "img/item_icon1.png",
-        title: "财产线索",
-        desc: "线索数量 697"
-      },
-      {
-        imgSrc: "img/item_icon2.png",
-        title: "企业图谱",
-        desc: "发现企业架构"
-      },
-      {
-        imgSrc: "img/item_icon3.png",
-        title: "疑似实际控制人",
-        desc: "算法分析企业实控人"
       }
     ];
 
@@ -355,6 +323,20 @@
       oDivOut.appendChild(oImg);
       oDivOut.appendChild(oDivInside);
       oItemsList.appendChild(oDivOut);
+    }
+
+    // header 导航栏 
+    var oAppLi = document.querySelector('.nav .app');
+    var oHidApp = document.querySelector('.hid-app')
+    console.log(oAppLi);
+    console.log(oHidApp);
+    oAppLi.onmouseover = function () {
+      console.log('hover');
+      oHidApp.style.display = 'block';
+    }
+
+    oAppLi.onmouseout = function () {
+      oHidApp.style.display = 'none';
     }
 
 

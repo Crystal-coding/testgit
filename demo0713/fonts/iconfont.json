@@ -34,6 +34,13 @@
       "unicode_decimal": 58977
     },
     {
+      "icon_id": "3905967",
+      "name": "zhcc_向上箭头1",
+      "font_class": "zhcc_xiangshangjiantou",
+      "unicode": "e688",
+      "unicode_decimal": 59016
+    },
+    {
       "icon_id": "4539906",
       "name": "礼物",
       "font_class": "liwu",
@@ -95,6 +102,13 @@
       "font_class": "huatipk",
       "unicode": "e537",
       "unicode_decimal": 58679
+    },
+    {
+      "icon_id": "16050278",
+      "name": "认证",
+      "font_class": "renzheng",
+      "unicode": "e625",
+      "unicode_decimal": 58917
     },
     {
       "icon_id": "22236014",

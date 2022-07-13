@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'iconfont';
-  src: url('../fonts/iconfont.ttf?t=1657551031532') format('truetype');
+  src: url('../fonts/iconfont.ttf?t=1657700805507') format('truetype');
 }
 
 .icon-font {
@@ -241,8 +241,23 @@ a:hover {
 }
 
 .arrow-down {
+  display: inline-block;
   font-size: 12px;
   padding: 4px;
+}
+
+.header .nav li:nth-of-type(1):hover .arrow-down {
+  transform: translateY(-2px) rotate(180deg);
+}
+
+.nav .hid-app {
+  display: none;
+  position: absolute;
+  right: -178px;
+  width: 400px;
+  height: 400px;
+  background-color: pink;
+  opacity: .5;
 }
 
 /* =====header-end===== */
@@ -267,10 +282,6 @@ a:hover {
 .top-code-wrap {
   cursor: pointer;
 }
-
-/* .banner-content {
-  height: 320px;
-} */
 
 .cont-left {
   position: relative;
